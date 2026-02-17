@@ -32,7 +32,7 @@ The goal of this project is to build a machine learning model that can predict w
 * Python
 * Pandas & NumPy (Data processing)
 * Matplotlib & Seaborn (Visualization)
-* Scikit-learn (Machine Learning)
+* PySpark MLlib (Machine Learning)
 * Google Colab
 
 ---
@@ -45,17 +45,17 @@ The goal of this project is to build a machine learning model that can predict w
 4. Model training using multiple algorithms:
 
    * Logistic Regression
-   * Decision Tree
    * Random Forest
+   * GBT
 5. Model evaluation and comparison
 
 ---
 
 ## 📈 Results
 
-* Best Model: **Random Forest Classifier**
+* Best Model: **Gradient Boosted Trees (GBT)**
 * Accuracy: **~85%**
-* ROC-AUC Score: **~0.88**
+* ROC-AUC Score: **~0.85**
 * The model effectively identifies high-risk churn customers.
 
 ---
