@@ -1,132 +1,89 @@
-# 🏦 Bank Customer Churn Prediction using PySpark
+# 🏦 Bank Customer Churn Prediction
 
-This project predicts bank customer churn using scalable machine learning models built with **PySpark MLlib**. The goal is to identify customers who are likely to leave the bank and provide insights that can help improve retention strategies.
+A machine learning project that predicts whether a bank customer will churn (leave the bank) using classification models and data analysis techniques. This project also provides actionable insights that can help banks improve customer retention.
 
 ---
 
-## 📌 Project Overview
+## 📌 Problem Statement
 
-Customer churn is a major challenge in the banking sector. Retaining customers is more cost-effective than acquiring new ones. This project uses **Big Data analytics and distributed machine learning** to predict churn using real-world customer data.
-
-Built as part of a **Big Data Analytics Lab mini project**.
+Customer churn is a major challenge for banks as acquiring new customers is more expensive than retaining existing ones.
+The goal of this project is to build a machine learning model that can predict whether a customer is likely to churn based on demographic and financial data.
 
 ---
 
 ## 📊 Dataset
 
-- **Source:** Kaggle – Bank Customer Churn Dataset  
-- **Records:** 10,000 customers  
-- **Features:** Demographic and account data
+* Source: Public bank churn dataset (commonly used in ML projects)
+* Features include:
 
-### Key Attributes:
-- Credit Score
-- Geography
-- Gender
-- Age
-- Tenure
-- Balance
-- Number of Products
-- Active Member Status
-- Estimated Salary
-- Target: `Exited` (0 = Retained, 1 = Churned)
+  * Age
+  * Geography
+  * Gender
+  * Balance
+  * Credit score
+  * Tenure
+  * Number of products
+  * Estimated salary
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Language:** Python  
-- **Framework:** PySpark (Apache Spark MLlib)  
-- **Platform:** Google Colab  
-- **Libraries:**
-  - pyspark.sql
-  - pyspark.ml (classification, feature engineering, evaluation)
+* Python
+* Pandas & NumPy (Data processing)
+* Matplotlib & Seaborn (Visualization)
+* Scikit-learn (Machine Learning)
+* Google Colab
 
 ---
 
-## ⚙️ Methodology
+## 🔍 Project Workflow
 
-### 1. Data Preprocessing
-- Removed irrelevant columns (CustomerId, Surname, RowNumber)
-- Handled categorical features using:
-  - StringIndexer
-  - OneHotEncoder
-- Combined features using VectorAssembler
-- Train-test split: 80:20
+1. Data preprocessing and cleaning
+2. Exploratory Data Analysis (EDA)
+3. Feature encoding and scaling
+4. Model training using multiple algorithms:
 
----
-
-### 2. Models Implemented
-
-- Logistic Regression (baseline)
-- Random Forest Classifier
-- Gradient Boosted Trees (GBT)
-
-All models built using **PySpark ML Pipelines**.
+   * Logistic Regression
+   * Decision Tree
+   * Random Forest
+5. Model evaluation and comparison
 
 ---
 
 ## 📈 Results
 
-| Model | AUC | Accuracy |
-|------|-----|----------|
-| Logistic Regression | 0.76 | 81.1% |
-| Random Forest | 0.83 | 85.1% |
-| Gradient Boosted Trees | **0.85** | **85.2%** |
-
-✅ **Best Model:** Gradient Boosted Trees
+* Best Model: **Random Forest Classifier**
+* Accuracy: **~85%**
+* ROC-AUC Score: **~0.88**
+* The model effectively identifies high-risk churn customers.
 
 ---
 
-## 🔍 Key Insights
+## 💡 Key Insights
 
-- Age is the strongest churn predictor
-- Customers with fewer products are more likely to churn
-- Inactive members have higher churn probability
-- Tree-based models outperform linear models for churn prediction
-
-These insights can help banks design targeted retention strategies.
+* Customers with lower balances are more likely to churn.
+* Customers with fewer products show higher churn rates.
+* Certain geographic regions show higher churn trends.
+* Older customers tend to remain more loyal.
 
 ---
 
-## 🚀 How to Run
+## 🚀 Future Improvements
 
-1. Install PySpark:
-pip install pyspark
-
-2. Run the notebook using:
-- Google Colab (recommended)  
-- Jupyter Notebook  
-
-3. Upload the dataset (CSV) and run all cells sequentially.
+* Deploy model using Streamlit for real-time predictions
+* Hyperparameter tuning for better accuracy
+* Use advanced models like XGBoost
+* Build an interactive dashboard
 
 ---
 
-## 📚 Learnings
+## 🎯 Project Objective
 
-- Built end-to-end ML pipeline using PySpark  
-- Learned feature engineering with Spark ML  
-- Compared multiple classification models  
-- Understood Big Data processing using distributed computing  
-- Gained practical experience with churn prediction  
+This project demonstrates an end-to-end machine learning workflow including data analysis, model building, evaluation, and business insights.
 
 ---
 
-## 🔮 Future Improvements
+## 📬 Author
 
-- Hyperparameter tuning  
-- Cross-validation  
-- Feature selection optimization  
-- Model deployment using Streamlit  
-- Real-time churn prediction pipeline  
-
----
-
-## 👩‍💻 Author
-
-Meghana  
-
----
-
-## ⭐ Support
-
-If you found this project helpful, consider giving it a star ⭐
+**Meghana U**
