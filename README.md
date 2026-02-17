@@ -60,6 +60,17 @@ The goal of this project is to build a machine learning model that can predict w
 
 ---
 
+## 📊 Model Performance Visualizations
+
+### Model Comparison
+![Model Comparison](Model_Comparison_Output.png)
+
+### Confusion Matrix (GBT)
+![Confusion Matrix](GBT_Confusion_Matrix.png)
+
+### ROC Curve (GBT)
+![ROC Curve](GBT_ROC_Curve.png)
+
 ## 💡 Key Insights
 
 * Customers with lower balances are more likely to churn.
