@@ -89,6 +89,14 @@ The goal of this project is to build a machine learning model that can predict w
 
 ---
 
+## 💼 Real-World Applications
+- Customer retention prediction
+- Banking risk analysis
+- Personalized marketing strategies
+- Revenue loss prevention
+
+---
+
 ## 🎯 Project Objective
 
 This project demonstrates an end-to-end machine learning workflow including data analysis, model building, evaluation, and business insights.
