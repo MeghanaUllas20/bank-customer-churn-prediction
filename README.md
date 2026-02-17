@@ -71,6 +71,8 @@ The goal of this project is to build a machine learning model that can predict w
 ### ROC Curve (GBT)
 ![ROC Curve](images/GBT_ROC_Curve.png)
 
+---
+
 ## 💡 Key Insights
 
 * Customers with lower balances are more likely to churn.
