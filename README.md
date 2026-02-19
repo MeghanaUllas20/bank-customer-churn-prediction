@@ -175,5 +175,5 @@ It showcases practical skills in:
 ## 👩‍💻 Author
 
 **Meghana U**
-CSE (AI & Data Science) Student
+CSE (AI & DS) Student
 
