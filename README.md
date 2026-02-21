@@ -1,7 +1,14 @@
 # 🏦 Bank Customer Churn Prediction (End-to-End ML Project)
 
 An end-to-end machine learning project that predicts whether a bank customer will churn (leave the bank) using big data processing and a deployable web application.
-This project combines **PySpark-based analysis** with a **Streamlit web app** for real-time predictions.
+This project combines **PySpark-based analysis** with a **live Streamlit web app** for real-time predictions.
+
+---
+
+## 🌐 Live Demo
+
+🚀 Try the deployed app here:
+👉 **https://bank-customer-churn-prediction-123.streamlit.app/**
 
 ---
 
@@ -17,8 +24,8 @@ The objective of this project is to build a predictive system that identifies cu
 * Built scalable churn prediction using **PySpark MLlib**
 * Compared multiple machine learning models
 * Extracted business insights from customer behavior
-* Deployed a **Streamlit web app** for real-time predictions
-* Created a complete **analysis → deployment pipeline**
+* Deployed a **live Streamlit web app**
+* Built a complete **analysis → deployment pipeline**
 
 ---
 
@@ -40,19 +47,19 @@ The objective of this project is to build a predictive system that identifies cu
 
 ## 🛠 Tech Stack
 
-**Data Processing & Modeling**
+### Data Processing & Modeling
 
 * Python
 * PySpark (Big Data Processing)
 * PySpark MLlib (Model Training)
 
-**Visualization**
+### Visualization
 
 * Matplotlib / Seaborn
 
-**Deployment**
+### Deployment
 
-* Streamlit (Web App)
+* Streamlit (Live Web App)
 * Joblib (Model Serialization)
 
 ---
@@ -63,7 +70,7 @@ The objective of this project is to build a predictive system that identifies cu
 
 * Data cleaning and preprocessing
 * Feature engineering
-* Handling categorical encoding
+* Categorical encoding
 
 ### 2️⃣ Model Training
 
@@ -83,6 +90,7 @@ Trained and compared:
 
 * Trained lightweight deployment model
 * Built Streamlit app for live predictions
+* Deployed on Streamlit Cloud
 
 ---
 
@@ -113,13 +121,13 @@ Trained and compared:
 
 ## 🌐 Streamlit Web Application
 
-This repository includes an interactive Streamlit web app for real-time churn prediction.
+This repository includes a fully deployed Streamlit web application for real-time churn prediction.
 
 ### Features
 
-* User-friendly input interface
-* Instant churn probability prediction
-* Real-time ML inference
+* Clean and intuitive UI
+* Real-time churn probability prediction
+* Instant ML inference
 
 ### ▶️ Run Locally
 
@@ -134,7 +142,7 @@ streamlit run app.py
 
 * Customers with lower balances are more likely to churn
 * Customers with fewer products have higher churn rates
-* Geography plays a role in churn behavior
+* Geography impacts churn behavior
 * Older customers tend to be more loyal
 
 ---
@@ -150,10 +158,10 @@ streamlit run app.py
 
 ## 🚀 Future Improvements
 
-* Deploy Streamlit app to cloud (Streamlit Cloud / AWS)
 * Add model explainability (SHAP)
 * Hyperparameter tuning
-* Add dashboard analytics
+* Add interactive analytics dashboard
+* Deploy using Docker / Cloud (AWS/GCP)
 
 ---
 
