@@ -3,7 +3,13 @@ import pandas as pd
 import joblib
 
 # Load model and encoders
-model = joblib.load("model.pkl")
+import os
+
+BASE_DIR = os.path.dirname(__file__)
+
+model = joblib.load(os.path.join(BASE_DIR, "model.pkl"))
+geo_encoder = joblib.load(os.path.join(BASE_DIR, "geo_encoder.pkl"))
+gender_encoder = joblib.load(os.path.join(BASE_DIR, "gender_encoder.pkl"))
 geo_encoder = joblib.load("geo_encoder.pkl")
 gender_encoder = joblib.load("gender_encoder.pkl")
 
